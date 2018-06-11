@@ -215,8 +215,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #4A4A4A;
-  z-index: 1; }
+  background-color: #4A4A4A; }
   header .logo {
     width: 25%;
     vertical-align: middle;
@@ -224,40 +223,38 @@ header {
     margin-top: 1rem;
     margin-left: 15px; }
 
-.hero-section .hero-section__center-txt {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%); }
-
-.hero-section .hero-section__sub-heading {
-  color: #B8A77A;
-  font-size: 1.3rem;
-  font-weight: 600; }
-
-.hero-section .hero-section__main-heading {
-  font-size: 3.5rem;
-  line-height: 5rem;
-  color: #F0EDF0;
-  margin: 0px; }
-  @media (min-width: 768px) {
-    .hero-section .hero-section__main-heading {
-      font-size: 6rem;
-      line-height: 7rem; } }
-  @media (min-width: 1200px) {
-    .hero-section .hero-section__main-heading {
-      font-size: 7.5rem;
-      line-height: 9rem; } }
-
-.hero-section .hero-section__small-heading {
-  font-size: 2.5rem;
-  text-align: center;
-  color: #4A4A4A;
-  line-height: 3rem;
-  font-style: italic; }
-  @media (min-width: 992px) {
-    .hero-section .hero-section__small-heading {
-      font-size: 3.5rem;
-      line-height: 4.5rem; } }
+.hero-section {
+  z-index: -1; }
+  .hero-section .hero-section__center-txt {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+  .hero-section .hero-section__sub-heading {
+    color: #B8A77A;
+    font-size: 1.3rem;
+    font-weight: 600; }
+  .hero-section .hero-section__main-heading {
+    font-size: 3.5rem;
+    line-height: 5rem;
+    color: #F0EDF0;
+    margin: 0px; }
+    @media (min-width: 768px) {
+      .hero-section .hero-section__main-heading {
+        font-size: 6rem;
+        line-height: 7rem; } }
+    @media (min-width: 1200px) {
+      .hero-section .hero-section__main-heading {
+        font-size: 7.5rem;
+        line-height: 9rem; } }
+  .hero-section .hero-section__small-heading {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #4A4A4A;
+    line-height: 3rem; }
+    @media (min-width: 992px) {
+      .hero-section .hero-section__small-heading {
+        font-size: 3.5rem;
+        line-height: 4.5rem; } }
 
 .align-right {
   text-align: right; }
@@ -371,6 +368,56 @@ footer {
           color: #6C6A6D; }
           footer .footer-content .footer-navigation li a:hover {
             color: #B8A77A; }
+
+.cases-container {
+  background-color: #fff;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+  .cases-container:nth-child(odd) {
+    background-color: #F2F1F1; }
+  .cases-container:last-of-type {
+    padding-bottom: 5rem; }
+  .cases-container .cases-container__date {
+    text-align: right; }
+    .cases-container .cases-container__date h3 {
+      color: #9B9B9B; }
+  .cases-container .cases-container__description span {
+    display: none; }
+  .cases-container .cases-container__description span.description-dots {
+    display: inline;
+    color: #B8A77A; }
+
+.read-button {
+  color: #B8A77A;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600; }
+  .read-button:focus {
+    outline: none; }
+
+.img_text-section {
+  z-index: -1; }
+  .img_text-section .img_text-section__center-txt {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%); }
+  .img_text-section .img_text-section__main-heading {
+    font-size: 3.5rem;
+    line-height: 5rem;
+    color: #fff;
+    margin: 0px; }
+    @media (min-width: 768px) {
+      .img_text-section .img_text-section__main-heading {
+        font-size: 6rem;
+        line-height: 7rem; } }
+    @media (min-width: 1200px) {
+      .img_text-section .img_text-section__main-heading {
+        font-size: 7.5rem;
+        line-height: 9rem; } }
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
